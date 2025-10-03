@@ -4,11 +4,11 @@ A modern, clean typing trainer inspired by Monkeytype. Practice your typing skil
 
 ## Features
 
-✨ **Clean UI** - Distraction-free, Monkeytype-inspired design
-🎯 **AI-Powered** - Dynamic sentence generation using Groq AI
-📊 **Real-time Stats** - Track WPM, accuracy, time, and characters
-🎨 **Smooth Animation** - Blinking cursor and color-coded feedback
-📱 **Responsive** - Works perfectly on desktop
+1. **Clean UI** - Distraction-free, Monkeytype-inspired design
+2. **AI-Powered** - Dynamic sentence generation using Groq AI
+3. **Real-time Stats** - Track WPM, accuracy, time, and characters
+4. **Smooth Animation** - Blinking cursor and color-coded feedback
+5. **Responsive** - Works perfectly on desktop
 
 ## Installation
 
