@@ -81,8 +81,4 @@ Sentence:"""
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    print("\n" + "="*50)
-    print("TypeFlow Server Starting...")
-    print(f"Open: http://localhost:{port}")
-    print("="*50 + "\n")
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port)
