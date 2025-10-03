@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeFlow - Modern Typing Trainer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="header">TypeFlow</div>
+        <button id="soundToggle" class="sound-toggle active" onclick="toggleSound()">🔊 sound on</button>
+        <a href="https://github.com/prince2004patel" target="_blank" class="credit">Made by Prince Patel</a>
+    </div>
+    
+    <div class="main-container">
+        <div class="config-container">
+            <div class="config-group">
+                <label>words</label>
+                <select id="wordCount">
+                    <option value="15-20">15-20</option>
+                    <option value="20-25">20-25</option>
+                    <option value="25-30">25-30</option>
+                </select>
+            </div>
+
+            <div class="config-group">
+                <label>difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>
+
+            <div class="config-group">
+                <label>&nbsp;</label>
+                <button id="generateBtn" onclick="generateSentence()">new sentence</button>
+            </div>
+        </div>
+
+        <div class="typing-area">
+            <div class="typing-container" id="typingContainer" onclick="focusInput()">
+                <div id="textDisplay" class="text-display"></div>
+            </div>
+        </div>
+
+        <input type="text" id="hiddenInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+        <div id="statsContainer" class="stats-container hidden"></div>
+
+        <div id="instruction" class="instruction">click "new sentence" to start typing practice</div>
+
+        <div id="loadingMsg" class="loading hidden">generating sentence...</div>
+    </div>
+
+    <!-- Keyboard Shortcuts Hint -->
+    <div class="shortcuts-hint">
+        <div class="shortcut-item">
+            <span class="key">esc</span>
+            <span>restart</span>
+        </div>
+        <div class="shortcut-item">
+            <span class="key">shift</span>
+            <span>+</span>
+            <span class="key">enter</span>
+            <span>next test</span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
